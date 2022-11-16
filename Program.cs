@@ -8,8 +8,13 @@ namespace Lists
 {
     internal class Program
     {
+        public string ItemName { get; set; }
+        public int ItemWeight { get; set; }
+        public string Inventory { get; set; }
+
         static void Main(string[] args)
         {
+
         }
         static void PickUp()
         {
