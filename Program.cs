@@ -7,11 +7,7 @@ using System.Threading.Tasks;
 namespace Lists
 {
     internal class Program
-    {
-        public string ItemName { get; set; }
-        public int ItemWeight { get; set; }
-        public string Inventory { get; set; }
-
+    {     
         static void Main(string[] args)
         {
 
@@ -20,7 +16,7 @@ namespace Lists
         {
 
         }
-        static void Drop()
+        static void Drop() 
         {
 
         }
@@ -34,7 +30,18 @@ namespace Lists
         }
         static void ShowInventory()
         {
+            List<int> list = new List<int>();
 
+            list.Add(4);
+            list.Add(5);
+            list.Add(6);
+
+            list.Remove(5);
+
+            Console.WriteLine(list[0]);
+            Console.WriteLine(list[1]);
+
+            Console.ReadKey();
         }
     }
 }
